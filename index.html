@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PackAI Packaging Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>PackAI Packaging Generator</h1>
+        <form id="packaging-form" action="#" method="post" enctype="multipart/form-data">
+            <label for="product-name">Product Name</label>
+            <input type="text" id="product-name" name="product-name" required>
+
+            <label for="product-type">Type of Product</label>
+            <select id="product-type" name="product-type">
+                <option value="food">Food</option>
+                <option value="beverage">Beverage</option>
+                <option value="health-beauty">Health & Beauty</option>
+                <option value="electronics">Electronics</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="audience">Target Audience</label>
+            <input type="text" id="audience" name="audience">
+
+            <label for="colors">Preferred Colors and Style Keywords</label>
+            <input type="text" id="colors" name="colors" placeholder="e.g. blue, minimalist">
+
+            <label for="format">Packaging Format</label>
+            <input type="text" id="format" name="format" placeholder="e.g. pouch, bottle, box">
+
+            <label for="logo">Upload Logo</label>
+            <input type="file" id="logo" name="logo">
+
+            <label for="references">Upload Reference Images</label>
+            <input type="file" id="references" name="references" multiple>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <div class="preview">
+            <h2>Preview</h2>
+            <p>Preview of your AI-generated packaging will appear here soon.</p>
+        </div>
+    </div>
+</body>
+</html>
